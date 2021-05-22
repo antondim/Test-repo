@@ -61,3 +61,27 @@ and use 'pass1234' as password.
 ./sql_queries.py
 ```
 **Extra scripts where created in order to DROP Database (drop_db.py) and CLEAR/DROP tables (clear_db_tables.py)**
+
+## Inside PostgreSQL server
+1) Login
+```
+sudo -u postgres psql
+```
+2) Check the databases 
+```
+\l
+```
+3) Connect to database 'blogging_db'
+```
+\c blogging_db
+```
+4) Check all post intries of posts table
+```
+SELECT * FROM posts;
+```
+5) Check all user entries of users table
+```
+SELECT * FROM users;
+```
+6) SQL queries
+You also can copy and paste the SQL code used in 'sql_queries.py' script , inside the PostgreSQL server's environment to get the results.
